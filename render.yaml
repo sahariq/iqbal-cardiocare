@@ -1,0 +1,32 @@
+services:
+  # Backend service
+  - type: web
+    name: iqbal-cardiocare-backend
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        value: iqbal-cardiocare-secret-key-2024
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: admin123
+      - key: RECAPTCHA_SECRET_KEY
+        value: 6LePJlgrAAAAAEZDv24jp4nQV9D1F_mAwd3PeQHl
+
+  # Frontend service
+  - type: web
+    name: iqbal-cardiocare-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: iqbal-cardiocare-backend
+          property: url 
