@@ -1,8 +1,7 @@
 {
-  "$schema": "https://json.schemastore.org/package.json",
-  "name": "cardiocare-clinic",
+  "name": "cardiocare",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,32 +11,23 @@
   },
   "dependencies": {
     "axios": "^1.6.7",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.1",
-    "express": "^4.18.2",
-    "framer-motion": "^11.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.17.0",
-    "mongoose": "^8.1.1",
-    "nodemailer": "^6.9.9",
+    "framer-motion": "^12.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-google-recaptcha": "^3.1.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.22.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.8"
+    "vite": "^5.1.0"
   }
 }

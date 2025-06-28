@@ -50,7 +50,7 @@ const About = () => {
               <li>MBBS, FCPS (Cardiology)</li>
               <li>Specialist in Interventional Cardiology</li>
               <li>Expert in Echocardiography, ECG, and Cardiac Consultation</li>
-              <li>Faculty in Coronary Angiography and Intervention</li>
+              <li>Facility in Coronary Angiography and Intervention</li>
             </ul>
           </motion.div>
           <motion.div

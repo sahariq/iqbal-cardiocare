@@ -28,7 +28,7 @@ const services = [
   },
   {
     image: pic7,
-    title: "Faculty of Coronary Angiography and Intervention",
+    title: "Facility of Coronary Angiography and Intervention",
     description: "Expert Diagnosis and Treatment of Coronary Artery Disease with State-of-the-Art Intervention Facilities.",
     bg: "bg-purple-50"
   }
