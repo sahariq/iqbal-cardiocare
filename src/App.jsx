@@ -14,14 +14,16 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Public routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/appointment" element={<Appointment />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* Public routes with Navbar */}
+        <Route element={<Navbar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
 
-        {/* Admin routes */}
+        {/* Admin routes (no Navbar) */}
         <Route path="/admin/*" element={<AdminApp />} />
         <Route path="/admin/login" element={<Login />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
